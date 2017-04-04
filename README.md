@@ -12,3 +12,5 @@ document d'analyse et de conception :
 https://docs.google.com/document/d/13g_JoD6F4cBJNbx_4q4IGWRBi_fn8_16nZ3e6xC3jFg/edit
 
 nom de la base de données : geotech (disponible sur la racine du projet)
+
+Installation de l'api_rest: composer install
