@@ -50,4 +50,22 @@ class PlaceController extends Controller
 
         return $place;
     }
+
+    //créaton d'un nouveau lieu
+    /**
+     * @Rest\View(statusCode=Response::HTTP_CREATED)
+     * @Rest\Post("/places")
+     */
+    public function postPlacesAction(Request $request)
+    {
+        $place = new Place();
+        $place->setName($request->get('name'))
+            ->setAddress($request->get('address'));
+
+        $em = $this->get('doctrine.orm.entity_manager');
+        $em->persist($place);
+        $em->flush();
+
+        return $place;
+    }
 }
