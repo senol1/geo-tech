@@ -14,3 +14,21 @@ https://docs.google.com/document/d/13g_JoD6F4cBJNbx_4q4IGWRBi_fn8_16nZ3e6xC3jFg/
 nom de la base de données : geotech (disponible sur la racine du projet)
 
 Installation de l'api_rest: composer install
+
+
+Exécution de copie locale
+Pour exécuter une copie locale en mode développement,  exécuter:
+
+npm start
+Aller à http://0.0.0.0:3000 ou http: // localhost: 3000 dans votre  navigateur.
+
+Pour exécuter la copie locale en mode de production et de construire les sources,  exécuter:
+
+npm run prebuild:prod && npm run build:prod && npm run server:prod
+Cela effacera votre dossier dist (où les fichiers de libération sont situés),
+générer une version release et démarrer le serveur intégré. Maintenant ,
+vous pouvez copier les sources du distdossier et de l' utiliser avec un cadre de back - end
+ou simplement le mettre sous un Web  serveur.
+
+Pour obtenir des informations plus sur la création d' une construction,
+s'il vous plaît vérifier Angular2 Webpack Starter  documentation
